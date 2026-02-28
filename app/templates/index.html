@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Río bueno Lodge | Cabañas en el Sur de Chile</title>
+        <meta
+            name="description"
+            content="Río bueno Lodge - Experiencia única en cabañas rurales en la sona Sur de Chile. Disfruta de naturaleza, lagos y bosques nativeños. Tu escape perfecto."
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/pico_css/pico.classless.sand.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="nav-logo"
+                            >Río bueno
+                            <span style="color: #5c8a4d">Lodge</span></a
+                        >
+                    </li>
+                </ul>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cabañas">Cabañas</a></li>
+                    <li><a href="#experiencias">Experiencias</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li>
+                        <a href="#contacto" class="btn-reservar">Reservar</a>
+                    </li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <article>
+                    <h1>Escapa al Corazón del Sur</h1>
+                    <p>Donde la naturaleza se convierte en tu hogar</p>
+                    <p>
+                        Cabañas rurales rodeadas de bosque native y privacidad
+                        total
+                    </p>
+                    <a href="#cabañas" class="btn-hero">Ver Cabañas</a>
+                </article>
+            </section>
+
+            <section class="intro container">
+                <div class="intro-content">
+                    <h2>Una Experiencia Única en la Araucanía</h2>
+                    <p>
+                        Ubicados en las puertas del<a
+                            href="#"
+                            style="color: #5c8a4d; font-weight: 600"
+                        >
+                            Fundo San Patricio</a
+                        >, te esperamos para vivir una experiencia inmersiva en
+                        la naturaleza del sur de Chile. Nuestras cabañas de
+                        madera nativeña, construidas con rollizos de olivillo y
+                        coigue, ofrecen el equilibRío perfecto entre confort y
+                        autenticidad rural.
+                    </p>
+                    <div class="intro-features">
+                        <span>🌲 Bosque Native</span>
+                        <span>🔥 Fogón ExteRíor</span>
+                        <span>🌊 Río Quillín</span>
+                        <span>🐕 Pet Friendly</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cabañas" class="cabañas container">
+                <h2 style="text-align: center; margin-bottom: 1rem">
+                    Nuestras Cabañas
+                </h2>
+                <p
+                    style="
+                        text-align: center;
+                        max-width: 600px;
+                        margin: 0 auto 3rem;
+                    "
+                >
+                    Construidas con técnicas tradicionales y materiales del sur,
+                    cada cabaña es un espacio único de descanso y conexión con
+                    la naturaleza.
+                </p>
+                <div class="grid">
+                    <article class="cabaña-card">
+                        <div class="cabaña-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80"
+                                alt="Cabaña Los Avellanos"
+                            />
+                            <span class="cabaña-tag">Mayor Capacidad</span>
+                        </div>
+                        <div class="cabaña-content">
+                            <h3>Cabaña Los Avellanos</h3>
+                            <div class="cabaña-info">
+                                <span>👥 Hasta 8 personas</span>
+                                <span>🛏️ 4 DormitoRíos</span>
+                                <span>🚿 2 Baños</span>
+                            </div>
+                            <p>
+                                Amplia cabaña de dos pisos con chimenea a leña,
+                                cocina fully equipada y terraza con vista al
+                                bosque. Ideal para familias o grupos.
+                            </p>
+                            <div class="cabaña-services">
+                                <span>🔥 Chimenea</span>
+                                <span>🍖 BBQ</span>
+                                <span>📶 Wifi</span>
+                                <span>🐕 Mascotas</span>
+                            </div>
+                            <a href="#contacto" class="btn-cabaña"
+                                >Reservar Ahora</a
+                            >
+                        </div>
+                    </article>
+                    <article class="cabaña-card">
+                        <div class="cabaña-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80"
+                                alt="Cabaña Los Canelos"
+                            />
+                            <span class="cabaña-tag">Romántica</span>
+                        </div>
+                        <div class="cabaña-content">
+                            <h3>Cabaña Los Canelos</h3>
+                            <div class="cabaña-info">
+                                <span>👥 Hasta 2 personas</span>
+                                <span>🛏️ 1 DormitoRío</span>
+                                <span>🚿 1 Baño</span>
+                            </div>
+                            <p>
+                                Acogedora cabaña para parejas. Chimenea
+                                inteRíor, tina caliente exteRíor y privacidad
+                                total en el corazón del bosque.
+                            </p>
+                            <div class="cabaña-services">
+                                <span>🔥 Chimenea</span>
+                                <span>🛁 Tina Caliente</span>
+                                <span>📶 Wifi</span>
+                                <span>☕ Desayuno</span>
+                            </div>
+                            <a href="#contacto" class="btn-cabaña"
+                                >Reservar Ahora</a
+                            >
+                        </div>
+                    </article>
+                    <article class="cabaña-card">
+                        <div class="cabaña-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=800&q=80"
+                                alt="Cabaña Los Arrayanes"
+                            />
+                            <span class="cabaña-tag">Económica</span>
+                        </div>
+                        <div class="cabaña-content">
+                            <h3>Cabaña Los Arrayanes</h3>
+                            <div class="cabaña-info">
+                                <span>👥 Hasta 4 personas</span>
+                                <span>🛏️ 2 DormitoRíos</span>
+                                <span>🚿 1 Baño</span>
+                            </div>
+                            <p>
+                                Cómoda cabaña económica perfecta para familias
+                                pequeñas. Cocina equipada, calefacción y acceso
+                                al río.
+                            </p>
+                            <div class="cabaña-services">
+                                <span>🔥 Estufa</span>
+                                <span>🍳 Cocina</span>
+                                <span>🌊 Río</span>
+                                <span>🐕 Mascotas</span>
+                            </div>
+                            <a href="#contacto" class="btn-cabaña"
+                                >Reservar Ahora</a
+                            >
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="experiencias" class="experiencias">
+                <div class="container">
+                    <h2 style="text-align: center; margin-bottom: 1rem">
+                        Experiencias en el Sur
+                    </h2>
+                    <p
+                        style="
+                            text-align: center;
+                            max-width: 600px;
+                            margin: 0 auto 3rem;
+                        "
+                    >
+                        Descubre todo lo que puedes hacer durante tu estadía en
+                        Río bueno Lodge.
+                    </p>
+                    <div class="grid">
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🥾</div>
+                            <h3>Senderismo</h3>
+                            <p>
+                                Explora senderos nativeños por el bosque. Rutas
+                                para todos los niveles con miradores naturales y
+                                cascadas ocultas.
+                            </p>
+                        </article>
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🎣</div>
+                            <h3>Pesca y Caza</h3>
+                            <p>
+                                El río Quillín es hogar de truchas arcoíris y
+                                sajones. Zona habilitada para pesca deportiva y
+                                safari de caza.
+                            </p>
+                        </article>
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🔥</div>
+                            <h3>Fogón y Asado</h3>
+                            <p>
+                                Cada cabaña tiene su fogón exteRíor. Disfruta de
+                                un asado chileno mientras contemplas el cielo
+                                estrellado.
+                            </p>
+                        </article>
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🍄</div>
+                            <h3>Caza de Hongos</h3>
+                            <p>
+                                En temporada, recorramos el bosque en busca de
+                                digüeñes, changles y loyo. Una experiencia única
+                                del sur.
+                            </p>
+                        </article>
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🐴</div>
+                            <h3>Cabalgatas</h3>
+                            <p>
+                                Recorre el fundo a caballo. Experiencia guiada
+                                por senderos nativeños con vistas
+                                espectaculares.
+                            </p>
+                        </article>
+                        <article class="experiencia-card">
+                            <div class="experiencia-icon">🌿</div>
+                            <h3>Jardín Botánico</h3>
+                            <p>
+                                Recorrido por el jardín nativo del fundo.
+                                Aprende sobre la flora nativeña del sur de
+                                Chile.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="galeria container">
+                <h2 style="text-align: center; margin-bottom: 3rem">
+                    Vive el Sur
+                </h2>
+                <div class="galeria-grid">
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+                        alt="Montañas del sur"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+                        alt="Bosque nativeño"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                        alt="Lago y montañas"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&q=80"
+                        alt="Playa de lago"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80"
+                        alt="Naturaleza sur"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80"
+                        alt="Paisaje lacustre"
+                    />
+                </div>
+            </section>
+
+            <section id="ubicacion" class="ubicacion">
+                <div class="container">
+                    <div class="grid">
+                        <div>
+                            <h2>Ubicación</h2>
+                            <p>
+                                Nos encontramos en la comuna de<a
+                                    href="#"
+                                    style="color: #5c8a4d; font-weight: 600"
+                                >
+                                    Río bueno</a
+                                >, provincia de Arauco, en la región del<a
+                                    href="#"
+                                    style="color: #5c8a4d; font-weight: 600"
+                                >
+                                    Biobío</a
+                                >. Una zona privilegiado del sur de Chile donde
+                                la cordillera de la Costa meets la Serranía.
+                            </p>
+                            <div class="ubicacion-info">
+                                <article>
+                                    <h4>📍 Dirección</h4>
+                                    <p>
+                                        Fundo San Patricio, Sector El Quillín<br />Río
+                                        bueno, Chile
+                                    </p>
+                                </article>
+                                <article>
+                                    <h4>🛣️ Cómo Llegar</h4>
+                                    <p>
+                                        A 45 minutos de Los Ángeles por ruta
+                                        R-55.<br />A 1 hora de Concepción por
+                                        ruta 5 sur.
+                                    </p>
+                                </article>
+                                <article>
+                                    <h4>🚌 Traslado</h4>
+                                    <p>
+                                        Ofrecemos servicio de traslado desde
+                                        terminal de buses de Los Ángeles.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mapa-placeholder">
+                                <span>🗺️ Mapa de Ubicación</span>
+                                <p>Fundo San Patricio, Río bueno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="contact container">
+                <h2 style="text-align: center; margin-bottom: 1rem">
+                    Reserva tu Experiencia
+                </h2>
+                <p
+                    style="
+                        text-align: center;
+                        max-width: 600px;
+                        margin: 0 auto 3rem;
+                    "
+                >
+                    Completa el formulaRío y te contactaremos en menos de 24
+                    horas para confirmar tu reserva.
+                </p>
+                <div class="grid">
+                    <div>
+                        <div class="contact-form">
+                            <h3>Solicitar Reserva</h3>
+                            <form>
+                                <div class="grid">
+                                    <input
+                                        type="text"
+                                        name="nombre"
+                                        placeholder="Nombre completo"
+                                        required
+                                    />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Correo electrónico"
+                                        required
+                                    />
+                                </div>
+                                <div class="grid">
+                                    <input
+                                        type="tel"
+                                        name="telefono"
+                                        placeholder="Teléfono"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        name="personas"
+                                        placeholder="Número de personas"
+                                        min="1"
+                                        max="8"
+                                        required
+                                    />
+                                </div>
+                                <div class="grid">
+                                    <input
+                                        type="date"
+                                        name="llegada"
+                                        placeholder="Fecha de llegada"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        name="noches"
+                                        placeholder="Número de noches"
+                                        min="1"
+                                        max="30"
+                                        required
+                                    />
+                                </div>
+                                <select name="cabaña" required>
+                                    <option value="" disabled selected>
+                                        Selecciona cabaña
+                                    </option>
+                                    <option value="avellanos">
+                                        Cabaña Los Avellanos (hasta 8)
+                                    </option>
+                                    <option value="canelos">
+                                        Cabaña Los Canelos (hasta 2)
+                                    </option>
+                                    <option value="arrayanes">
+                                        Cabaña Los Arrayanes (hasta 4)
+                                    </option>
+                                    <option value="sin-preferencia">
+                                        Sin preferencia
+                                    </option>
+                                </select>
+                                <textarea
+                                    name="mensaje"
+                                    placeholder="¿Alguna consulta o solicitud especial?"
+                                    rows="4"
+                                ></textarea>
+                                <button type="submit" class="btn-primary">
+                                    Solicitar Reserva
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Información de Contacto</h3>
+                        <article>
+                            <h4>📍 Ubicación</h4>
+                            <p>
+                                Fundo San Patricio<br />Sector El Quillín, Río
+                                bueno<br />Región del Biobío, Chile
+                            </p>
+                        </article>
+                        <article>
+                            <h4>📞 Teléfono y WhatsApp</h4>
+                            <p>(+56) 9 1234 5678</p>
+                        </article>
+                        <article>
+                            <h4>✉️ Correo</h4>
+                            <p>reservas@caetetelodge.cl</p>
+                        </article>
+                        <article>
+                            <h4>🕐 HoraRío de Atención</h4>
+                            <p>
+                                Lunes a Domingo: 9:00 - 21:00<br />WhatsApp
+                                siempre disponible
+                            </p>
+                        </article>
+                        <article class="social-links">
+                            <h4>📱 Redes Sociales</h4>
+                            <p>Síguenos: @caenetelodge</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <h3 class="footer-logo">
+                            Río bueno <span style="color: #5c8a4d">LODGE</span>
+                        </h3>
+                        <p>
+                            Tu escape rural al corazón del sur de Chile. Cabañas
+                            rodeadas de bosque nativeño, privacidad y naturaleza
+                            pura.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#cabañas">Nuestras Cabañas</a></li>
+                            <li><a href="#experiencias">Experiencias</a></li>
+                            <li><a href="#ubicacion">Cómo Llegar</a></li>
+                            <li><a href="#contacto">Reservas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Información</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Cancelación</a></li>
+                            <li><a href="#">Preguntas Frecuentes</a></li>
+                            <li><a href="#">Mascotas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p style="text-align: center">
+                    &copy; 2026 Río bueno Lodge. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+        <script>
+            document
+                .querySelector(".nav-toggle")
+                .addEventListener("click", function () {
+                    document
+                        .querySelector(".nav-menu")
+                        .classList.toggle("active");
+                    this.classList.toggle("active");
+                });
+
+            document.querySelectorAll(".nav-menu a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    document
+                        .querySelector(".nav-menu")
+                        .classList.remove("active");
+                    document
+                        .querySelector(".nav-toggle")
+                        .classList.remove("active");
+                });
+            });
+        </script>
+    </body>
+</html>
